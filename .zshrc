@@ -7,7 +7,7 @@ autoload -Uz compinit
 compinit
 
 zstyle ':completion:*:*:kill:*:processes' command 'ps -x'
-zstyle :compinstall filename '/home/kalmus/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 HISTFILE=~/.history_zsh
 HISTSIZE=100000
