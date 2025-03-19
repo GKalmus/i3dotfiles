@@ -1,8 +1,6 @@
 PROMPT='%m %(?.%F{green}[%~].%F{red}[%~])%f %# '
 export TERMINAL=/usr/bin/alacritty
 
-
-
 autoload -Uz compinit
 compinit
 
