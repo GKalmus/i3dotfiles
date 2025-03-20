@@ -11,7 +11,8 @@ cd i3dotfiles
 2. Install the dependecies:
 ```sh
 sudo pacman -Syu --needed i3-wm ttf-jetbrains-mono-nerd zsh picom \
-neovim polybar alacritty imagemagick scrot xclip
+neovim polybar adobe-source-han-serif-jp-fonts adobe-source-han-sans-kr-fonts \
+imagemagick scrot xclip alacritty
 ```
 3. Move configuration files:
 ```sh
