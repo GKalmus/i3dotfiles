@@ -21,4 +21,4 @@ mv .zshrc ~/
 ```
 
 ## Screenshot
-[Screenshot](!screenshot.png)
+![Screenshot](screenshot.png)
