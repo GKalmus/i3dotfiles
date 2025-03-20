@@ -19,3 +19,6 @@ mv .config/* ~/.config/
 mv .Xresources ~/
 mv .zshrc ~/
 ```
+
+## Screenshot
+[Screenshot](!screenshot.png)
