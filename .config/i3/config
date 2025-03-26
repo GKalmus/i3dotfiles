@@ -40,7 +40,7 @@ bindsym Control+$mod+l exec ~/.config/i3/scripts/lock.sh
 bindsym --release $mod+b exec ~/.config/i3/scripts/screenshot.sh
 
 bindsym $mod+Return exec $terminal
-bindsym $mod+d exec i3-dmenu-desktop --entry-type=command --dmenu="dmenu -i -nb '$bg' -nf '$fg'  -sb '$fg' -sf  '$bg' -p '$HOSTNAME'"
+bindsym $mod+d exec "dmenu_run -i -nb '$bg' -nf '$fg'  -sb '$fg' -sf  '$bg'"
 bindsym $mod+q kill
 
 ## i3
