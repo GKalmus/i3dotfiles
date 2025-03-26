@@ -16,9 +16,9 @@ imagemagick scrot xclip alacritty
 ```
 3. Move configuration files:
 ```sh
-mv .config/* ~/.config/
-mv .Xresources ~/
-mv .zshrc ~/
+cp -rf .config/* ~/.config/
+cp -rf .Xresources ~/
+cp -rf .zshrc ~/
 ```
 
 ## Screenshot
