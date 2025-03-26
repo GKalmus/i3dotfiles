@@ -12,7 +12,7 @@ cd i3dotfiles
 ```sh
 sudo pacman -Syu --needed i3-wm ttf-jetbrains-mono-nerd zsh picom \
 neovim polybar adobe-source-han-serif-jp-fonts adobe-source-han-sans-kr-fonts \
-imagemagick scrot xclip alacritty
+imagemagick scrot xclip alacritty ly
 ```
 3. Move configuration files:
 ```sh
