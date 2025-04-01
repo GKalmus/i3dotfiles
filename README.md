@@ -4,8 +4,7 @@
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/GKalmus/i3dotfiles.git
-cd i3dotfiles
+git clone https://github.com/GKalmus/i3dotfiles.git; cd i3dotfiles
 ```
 
 2. Install the dependecies:
