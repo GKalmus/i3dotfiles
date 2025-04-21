@@ -6,10 +6,8 @@ vim.api.nvim_set_hl(0, "Normal", { ctermbg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = "none" })
 
 vim.opt.wrap = false
-vim.opt.smartindent = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
