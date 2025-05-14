@@ -20,6 +20,3 @@ cp -rf config/* ~/.config/
 cp config/.Xresources ~/
 cp config/.zshrc ~/
 ```
-
-## Screenshot
-![Screenshot](assets/screenshot.png)

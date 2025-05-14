@@ -1,4 +1,3 @@
 return {
-	{"jiangmiao/auto-pairs"}
+	{ "jiangmiao/auto-pairs" }
 }
-
