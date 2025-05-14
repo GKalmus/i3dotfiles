@@ -1,4 +1,4 @@
-PROMPT='a%B%m %(?.%F{green}[%~].%F{red}[%~])%f%b %# '
+PROMPT='%B%m %(?.%F{green}[%~].%F{red}[%~])%f%b %# '
 
 autoload -Uz compinit
 compinit
