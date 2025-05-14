@@ -22,4 +22,4 @@ cp config/.zshrc ~/
 ```
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](assets/screenshot.png)

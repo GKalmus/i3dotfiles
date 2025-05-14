@@ -10,16 +10,15 @@ set $mod Mod4
 set $wallpaper ~/.config/i3/wallpaper.png
 
 ## Terminal
-set $terminal i3-sensible-terminal
+set $terminal ghostty
 
 ## Font
 font pango:JetBrainsMono Nerd Font 8
 
 ## Start up apps
-exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id nm-applet
 exec --no-startup-id picom --backend glx --fade-in-step=1 --fade-out-step=1 --fade-delta=0 
 exec --no-startup-id feh --no-fehbg --bg-fill $wallpaper 
+exec --no-startup-id nm-applet
 exec --no-startup-id polybar
 
 # colors
@@ -40,7 +39,7 @@ bindsym Control+$mod+l exec ~/.config/i3/scripts/lock.sh
 bindsym --release $mod+b exec ~/.config/i3/scripts/screenshot.sh
 
 bindsym $mod+Return exec $terminal
-bindsym $mod+d exec "dmenu_run -i -nb '$bg' -nf '$fg'  -sb '$fg' -sf  '$bg'"
+bindsym $mod+d exec dmenu_run -i -nb '$bg' -nf '$fg' -sb '$fg' -sf '$bg'
 bindsym $mod+q kill
 
 ## i3
