@@ -18,3 +18,6 @@ vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = "none" })
+
+vim.cmd("cabb W w")
+vim.cmd("cabb Q q")
