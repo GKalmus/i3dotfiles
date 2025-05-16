@@ -18,5 +18,3 @@ window-decoration = server
 
 confirm-close-surface = false
 resize-overlay = never
-
-command = TERM=xterm-256color /usr/bin/bash
