@@ -6,24 +6,21 @@ return {
 		end
 	},
 	{
-		"williamboman/mason-lspconfig.nvim",
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "rust_analyzer" }
-			})
-		end
-	},
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = { "lua_ls", "rust_analyzer" },
+		},
+	}
+
+	,
 	{
 		"neovim/nvim-lspconfig",
-		dependencies = {'saghen/blink.cmp' },
-		config = function()
-			local capabilities = require('blink.cmp').get_lsp_capabilities()
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.lua_ls.setup({})
-			lspconfig.rust_analyzer.setup({})
-			lspconfig.clangd.setup({})
-			lspconfig.pylsp.setup({})
-		end
+		dependencies = { 'saghen/blink.cmp' },
+		vim.lsp.enable('pyright'),
+		vim.lsp.enable('wgsl_analyzer'),
+		vim.lsp.enable('lua_ls'),
+		vim.lsp.enable('rust_analyzer'),
+		vim.lsp.enable('clangd'),
+		vim.lsp.enable('pylsp'),
 	}
 }
