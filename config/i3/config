@@ -16,11 +16,12 @@ set $terminal ghostty
 font pango:JetBrainsMono Nerd Font 8
 
 ## Start up apps
-exec --no-startup-id xrandr --output DP-1 --mode 1920x1080 --rate 100 --primary --output HDMI-1 --mode 1920x1080 --rate 75 --left-of DP-1
+# exec --no-startup-id xrandr --output DP-1 --mode 1920x1080 --rate 100 --primary --output HDMI-1 --mode 1920x1080 --rate 75 --left-of DP-1
 exec --no-startup-id picom --backend glx --fade-in-step=1 --fade-out-step=1 --fade-delta=0 
 exec --no-startup-id feh --no-fehbg --bg-fill $wallpaper 
 exec --no-startup-id nm-applet
-exec --no-startup-id polybar 0 
+# exec --no-startup-id polybar 0 
+# exec --no-startup-id polybar 1
 
 # colors
 set_from_resource $bg	background 
