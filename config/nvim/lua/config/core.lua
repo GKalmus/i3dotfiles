@@ -9,11 +9,10 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
 -- Colors
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.cmd.colorscheme('vesper')
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "none" })
