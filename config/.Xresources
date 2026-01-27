@@ -1,43 +1,38 @@
+! 
+! Pastel White by Muzieca
 !
-! Vesper
-!
-*.foreground:  #ffffff
-*.background:  #101010
-*.cursorColor: #acb1ab
-!
-! Black
-*.color0:      #101010
-*.color8:      #7e7e7e
-!
-! Red
-*.color1:      #f5a191
-*.color9:      #ff8080
-!
-! Green
-*.color2:      #90b99f
-*.color10:     #99ffe4
-!
-! Yellow
-*.color3:      #e6b99d
-*.color11:     #ffc799
-!
-! Blue
-*.color4:      #aca1cf
-*.color12:     #b9aeda
-!
-! Magenta
-*.color5:      #e29eca
-*.color13:     #ecaad6
-!
-! Cyan
-*.color6:      #ea83a5
-*.color14:     #f591b2
-!
-! White
-*.color7:      #a0a0a0
-*.color15:     #ffffff
-!
-! Bold, Italic, Underline
-*.colorBD:     #acb1ab
-!*.colorIT:
-!*.colorUL:
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #646e5b
+*.color8:       #88927e
+
+! red
+*.color1:       #db7464
+*.color9:       #dba08f
+
+! green
+*.color2:       #a7e160
+*.color10:      #bde18b
+
+! yellow
+*.color3:       #dbd560
+*.color11:      #dbda8b
+
+! blue
+*.color4:       #69b2d6
+*.color12:      #95a9d6
+
+! magenta
+*.color5:       #a073d6
+*.color13:      #b59fd6
+
+! cyan
+*.color6:       #69e1d3
+*.color14:      #95e1d2
+
+! white
+*.color7:       #9ea894
+*.color15:      #c9d0c2
