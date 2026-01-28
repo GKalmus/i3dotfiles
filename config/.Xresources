@@ -1,38 +1,37 @@
-! 
-! Pastel White by Muzieca
-!
+! special
 *.foreground:   #ffffff
 *.background:   #000000
 *.cursorColor:  #ffffff
 
 ! black
-*.color0:       #646e5b
-*.color8:       #88927e
+*.color0:       #666666
+*.color8:       #999999
 
 ! red
-*.color1:       #db7464
-*.color9:       #dba08f
+*.color1:       #cc6666
+*.color9:       #ff9999
 
 ! green
-*.color2:       #a7e160
-*.color10:      #bde18b
+*.color2:       #66cc99
+*.color10:      #99ffcc
 
 ! yellow
-*.color3:       #dbd560
-*.color11:      #dbda8b
+*.color3:       #cc9966
+*.color11:      #ffcc99
 
 ! blue
-*.color4:       #69b2d6
-*.color12:      #95a9d6
+*.color4:       #6699cc
+*.color12:      #99ccff
 
 ! magenta
-*.color5:       #a073d6
-*.color13:      #b59fd6
+*.color5:       #cc6699
+*.color13:      #ff99cc
 
 ! cyan
-*.color6:       #69e1d3
-*.color14:      #95e1d2
+*.color6:       #66cccc
+*.color14:      #99ffff
 
 ! white
-*.color7:       #9ea894
-*.color15:      #c9d0c2
+*.color7:       #cccccc
+*.color15:      #ffffff
+
