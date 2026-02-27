@@ -7,10 +7,10 @@
 set $mod Mod4
 
 ## Wallpaper, prefferably .png format
-set $wallpaper ~/.config/i3/kaed.png
+set $wallpaper  feh --no-fehbg --bg-fill ~/.config/i3/kaed.png
 
 ## Terminal
-set $terminal ghostty
+set $terminal alacritty
 
 ## Font
 font pango:JetBrainsMono Nerd Font 8
@@ -19,8 +19,8 @@ font pango:JetBrainsMono Nerd Font 8
 # exec --no-startup-id xrandr --output DP-1 --mode 1920x1080 --rate 100 --primary --output HDMI-1 --mode 1920x1080 --rate 75 --left-of DP-1
 exec --no-startup-id picom --backend glx --fade-in-step=1 --fade-out-step=1 --fade-delta=0 
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --no-fehbg --bg-fill $wallpaper 
 exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $wallpaper 
 
 # colors
 set_from_resource $bg	background 
@@ -36,10 +36,14 @@ bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
 bindsym XF86MonBrightnessDown 	exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp 	exec brightnessctl set 5%+
 
+bindsym XF86AudioMicMute exec amixer -D pulse sset Capture toggle
+
 bindsym Control+$mod+l exec ~/.config/i3/scripts/lock.sh 
 bindsym --release $mod+b exec ~/.config/i3/scripts/screenshot.sh
 
 bindsym $mod+Return exec $terminal
+bindsym $mod+Shift+o exec xrandr --auto && $wallpaper
+bindsym $mod+Shift+p exec $HOME/.screenlayout/screen.sh && $wallpaper
 bindsym $mod+d exec dmenu_run -i -nb '$bg' -nf '$fg' -sb '$fg' -sf '$bg'
 bindsym $mod+q kill
 
@@ -71,6 +75,8 @@ bindsym $mod+Shift+Right move right
 
 ### enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+
+bindsym $mod+v split v
 
 ### change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -134,17 +140,18 @@ floating_maximum_size    1600 x 900
 
 ## Border 
 hide_edge_borders none
-default_border pixel 2
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 
 ## Gaps
-gaps inner 8
-gaps outer 8
+gaps inner 1
+gaps outer 1
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
 #bar {
-#    	status_command i3blocks
+#
 #}
 
 #                       	border  backgr  text   indicator
